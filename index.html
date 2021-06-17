@@ -7,7 +7,31 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h2>Start your webcam</h2>
+    <div class="videos">
+      <span>
+        <h3>Local</h3>
+        <video id='webcamVideo' autoplay playsinline></video>
+      </span>
+  
+      <span>
+        <h3>Remote</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <butoon id="webcamButton">Start webcam</butoon>
+    <h2>Create a new Call</h2>
+    <button id="callButton" disabled></button>
+
+    <h2>Join a Call</h2>
+
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+
+    <button id="hangupButton">Hangup</button>
+
     <script type="module" src="/main.js"></script>
+    
   </body>
 </html>
